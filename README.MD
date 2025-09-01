@@ -1,11 +1,12 @@
-# 📦 Archive Extraction Tool with Graphical Interface (Tkinter) / Ferramenta de Extração de Arquivos com Interface Gráfica
+# 📦 Archive Extractor - Graphical File Extraction Tool / Extrator de Arquivos com Interface Gráfica
 
-# unzipfull
+# archive-extractor
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Python Version](https://img.shields.io/badge/Python-3.7%2B-blue.svg)
-![GitHub Repo stars](https://img.shields.io/github/stars/CalielBR/unzipfull?style=social)
-![GitHub forks](https://img.shields.io/github/forks/CalielBR/unzipfull?style=social)
+![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey.svg)
+![GitHub Repo stars](https://img.shields.io/github/stars/CalielBR/archive-extractor?style=social)
+![GitHub forks](https://img.shields.io/github/forks/CalielBR/archive-extractor?style=social)
 
 ## 🌐 English Version
 
@@ -22,6 +23,8 @@ It displays extraction progress with a visual bar, including file sizes in GB an
 ✔️ Countdown window for automatic closure after completion  
 ✔️ Prevents closing if no files were selected  
 ✔️ Full support for Windows, Linux, and macOS  
+✔️ Color-coded buttons for better user experience  
+✔️ Multi-threaded extraction process  
 
 ### 📁 Requirements
 
@@ -71,13 +74,13 @@ In VS Code, open your script and use the integrated terminal to execute it.
 
 ### ▶️ How to Run the Script
 
-1. Save this script as `unzipfull.py`  
+1. Save this script as `archive_extractor.py`  
 2. Open terminal or command prompt in the script's folder  
 3. Execute the script with:
 
-       python unzipfull.py
+       python archive_extractor.py
     or
-       python3 unzipfull.py
+       python3 archive_extractor.py
 
 4. The interface will open. Select files and destination folder  
 5. Monitor extraction progress in the progress bar and message area  
@@ -90,6 +93,7 @@ In VS Code, open your script and use the integrated terminal to execute it.
 
 - Avoid modifying files while extraction is in progress  
 - Upon completion, the window will display a countdown before closing  
+- For large files, ensure you have sufficient disk space  
 
 ### 📞 Need Help?  
 If you have questions, review each library's documentation:
@@ -114,6 +118,8 @@ Ele exibe o progresso da extração em uma barra visual, incluindo o tamanho dos
 ✔️ Janela com contagem regressiva para fechamento automático após concluir  
 ✔️ Evita fechar caso nenhum arquivo tenha sido selecionado  
 ✔️ Suporte completo para Windows, Linux e macOS  
+✔️ Botões coloridos para melhor experiência do usuário  
+✔️ Processo de extração multi-thread  
 
 ### 📁 Requisitos
 
@@ -163,13 +169,13 @@ No VS Code, abra seu script e use o terminal integrado para executar.
 
 ### ▶️ Como Executar o Script
 
-1. Salve este script como `unzipfull.py`  
+1. Salve este script como `archive_extractor.py`  
 2. Abra o terminal ou prompt de comando na pasta onde está o arquivo  
 3. Execute o script com:
 
-       python unzipfull.py
+       python archive_extractor.py
     ou
-       python3 unzipfull.py
+       python3 archive_extractor.py
 
 4. A interface será aberta. Selecione os arquivos e a pasta de destino  
 5. Acompanhe a extração na barra de progresso e na área de mensagens  
@@ -182,6 +188,7 @@ No VS Code, abra seu script e use o terminal integrado para executar.
 
 - Evite mexer nos arquivos enquanto estão sendo extraídos  
 - Ao final, a janela exibirá uma contagem regressiva antes de fechar  
+- Para arquivos grandes, certifique-se de ter espaço suficiente em disco  
 
 ### 📞 Dúvidas?  
 Se tiver dúvidas, revise a documentação de cada biblioteca:
