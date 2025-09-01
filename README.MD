@@ -8,6 +8,103 @@
 ![GitHub forks](https://img.shields.io/github/forks/CalielBR/unzipfull?style=social)
 
 
+
+# 📦 Archive Extraction Tool with Graphical Interface (Tkinter)
+
+This script provides a graphical user interface (GUI) for selecting compressed files (.zip, .rar, .7z, and split archives like .zip.001, .zip.002, etc.) and automatically extracting them to a user-defined destination folder.
+
+It displays extraction progress with a visual bar, including file sizes in GB and the total number of files being processed.
+
+## 🔧 Features
+
+✔️ Graphical interface (GUI) with Tkinter  
+✔️ Supports .zip, .rar, .7z, and split archives (.zip.001, .zip.002, ...)  
+✔️ Automatically combines split archive parts  
+✔️ Displays progress bar with GB extracted and total size  
+✔️ Countdown window for automatic closure after completion  
+✔️ Prevents closing if no files were selected  
+✔️ Full support for Windows, Linux, and macOS  
+
+## 📁 Requirements
+
+✔️ Python 3.7 or higher  
+✔️ Required libraries (install with pip):  
+    - tkinter (graphical interface) → usually included with Python  
+    - zipfile (Python standard library)  
+    - rarfile → .rar extraction  
+    - py7zr → .7z extraction  
+    - python-magic-bin (optional) → better file type detection  
+
+## 💻 Python Installation
+
+🔹 **WINDOWS:**  
+    1. Download installer: https://www.python.org/downloads/windows/  
+    2. Check "Add Python to PATH" during installation  
+    3. Complete installation normally  
+
+🔹 **LINUX (Ubuntu, Mint, etc):**  
+    Check if Python is already installed:  
+        `python3 --version`  
+    If not installed or to update:  
+        `sudo apt update`  
+        `sudo apt install python3 python3-pip python3-tk unrar`  
+
+🔹 **MACOS:**  
+    Python comes pre-installed, but you can update using Homebrew:  
+        `brew install python`  
+        `brew install unrar`  
+
+## 📦 Installing Dependencies
+
+Open terminal or command prompt and execute:
+
+    pip install py7zr rarfile python-magic-bin
+
+If using multiple Python versions, use:
+
+    python3 -m pip install py7zr rarfile python-magic-bin
+
+## 💻 Recommended Editor
+
+👉 **VS Code (Visual Studio Code):**  
+Download and install from: https://code.visualstudio.com/  
+
+In VS Code, open your script and use the integrated terminal to execute it.
+
+## ▶️ How to Run the Script
+
+1. Save this script as `unzipfull.py`  
+2. Open terminal or command prompt in the script's folder  
+3. Execute the script with:
+
+       python unzipfull.py
+    or
+       python3 unzipfull.py
+
+4. The interface will open. Select files and destination folder  
+5. Monitor extraction progress in the progress bar and message area  
+
+## 🚨 Important Notes
+
+- `rarfile` requires the `unrar` program installed on the system (Linux/macOS)  
+- On Linux systems, `tkinter` may need separate installation:
+      `sudo apt install python3-tk`
+
+- Avoid modifying files while extraction is in progress  
+- Upon completion, the window will display a countdown before closing  
+
+## 📞 Need Help?  
+If you have questions, review each library's documentation:
+- https://pypi.org/project/py7zr/  
+- https://pypi.org/project/rarfile/  
+- https://docs.python.org/3/library/tk.html  
+
+---
+👨‍💻 **Created by:** Mike CalielFR Barbosa  
+https://github.com/Calielbr  
+
+
+
 Este script oferece uma interface gráfica (GUI) para selecionar arquivos compactados  
 (.zip, .rar, .7z, e arquivos divididos como .zip.001, .zip.002, etc.) e extrair todos  
 automaticamente para uma pasta de destino definida pelo usuário.
@@ -52,5 +149,6 @@ em GB e o número total de arquivos sendo processados.
 Verifique se o Python já está instalado:
 ```bash
 python3 --version
+
 
 
