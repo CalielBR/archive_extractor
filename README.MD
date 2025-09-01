@@ -1,5 +1,7 @@
 # 📦 Extração de Arquivos (.zip, .7z, .rar, .zip.001...) com Interface Gráfica (Tkinter)
 
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 Este script oferece uma interface gráfica (GUI) para selecionar arquivos compactados  
 (.zip, .rar, .7z, e arquivos divididos como .zip.001, .zip.002, etc.) e extrair todos  
 automaticamente para uma pasta de destino definida pelo usuário.
@@ -44,3 +46,4 @@ em GB e o número total de arquivos sendo processados.
 Verifique se o Python já está instalado:
 ```bash
 python3 --version
+
