@@ -1,4 +1,4 @@
-# 📦 Extração de Arquivos (.zip, .7z, .rar, .zip.001...) com Interface Gráfica (Tkinter)
+# 📦 Archive Extraction Tool with Graphical Interface (Tkinter)
 
 # unzipfull
 
@@ -9,7 +9,6 @@
 
 
 
-# 📦 Archive Extraction Tool with Graphical Interface (Tkinter)
 
 This script provides a graphical user interface (GUI) for selecting compressed files (.zip, .rar, .7z, and split archives like .zip.001, .zip.002, etc.) and automatically extracting them to a user-defined destination folder.
 
@@ -149,6 +148,7 @@ em GB e o número total de arquivos sendo processados.
 Verifique se o Python já está instalado:
 ```bash
 python3 --version
+
 
 
 
