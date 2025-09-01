@@ -74,7 +74,7 @@ In VS Code, open your script and use the integrated terminal to execute it.
 
 ### ▶️ How to Run the Script
 
-1. Save this script as `archive_extractor.py`  
+1. Select this script as `archive_extractor.py`  
 2. Open terminal or command prompt in the script's folder  
 3. Execute the script with:
 
@@ -169,13 +169,13 @@ No VS Code, abra seu script e use o terminal integrado para executar.
 
 ### ▶️ Como Executar o Script
 
-1. Salve este script como `archive_extractor.py`  
+1. Navegue até o script com nome `extrair_arquivos.py`  
 2. Abra o terminal ou prompt de comando na pasta onde está o arquivo  
 3. Execute o script com:
 
-       python archive_extractor.py
+       python extrair_arquivos.py
     ou
-       python3 archive_extractor.py
+       python3 extrair_arquivos.py
 
 4. A interface será aberta. Selecione os arquivos e a pasta de destino  
 5. Acompanhe a extração na barra de progresso e na área de mensagens  
@@ -200,3 +200,4 @@ Se tiver dúvidas, revise a documentação de cada biblioteca:
 
 👨‍💻 **Created by / Criado por:** Mike CalielFR Barbosa  
 https://github.com/Calielbr  
+
