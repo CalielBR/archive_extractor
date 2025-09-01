@@ -1,4 +1,4 @@
-# 📦 Archive Extraction Tool with Graphical Interface (Tkinter)
+# 📦 Archive Extraction Tool with Graphical Interface (Tkinter) / Ferramenta de Extração de Arquivos com Interface Gráfica
 
 # unzipfull
 
@@ -7,14 +7,13 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/CalielBR/unzipfull?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/CalielBR/unzipfull?style=social)
 
-
-
+## 🌐 English Version
 
 This script provides a graphical user interface (GUI) for selecting compressed files (.zip, .rar, .7z, and split archives like .zip.001, .zip.002, etc.) and automatically extracting them to a user-defined destination folder.
 
 It displays extraction progress with a visual bar, including file sizes in GB and the total number of files being processed.
 
-## 🔧 Features
+### 🔧 Features
 
 ✔️ Graphical interface (GUI) with Tkinter  
 ✔️ Supports .zip, .rar, .7z, and split archives (.zip.001, .zip.002, ...)  
@@ -24,7 +23,7 @@ It displays extraction progress with a visual bar, including file sizes in GB an
 ✔️ Prevents closing if no files were selected  
 ✔️ Full support for Windows, Linux, and macOS  
 
-## 📁 Requirements
+### 📁 Requirements
 
 ✔️ Python 3.7 or higher  
 ✔️ Required libraries (install with pip):  
@@ -34,7 +33,7 @@ It displays extraction progress with a visual bar, including file sizes in GB an
     - py7zr → .7z extraction  
     - python-magic-bin (optional) → better file type detection  
 
-## 💻 Python Installation
+### 💻 Python Installation
 
 🔹 **WINDOWS:**  
     1. Download installer: https://www.python.org/downloads/windows/  
@@ -53,7 +52,7 @@ It displays extraction progress with a visual bar, including file sizes in GB an
         `brew install python`  
         `brew install unrar`  
 
-## 📦 Installing Dependencies
+### 📦 Installing Dependencies
 
 Open terminal or command prompt and execute:
 
@@ -63,14 +62,14 @@ If using multiple Python versions, use:
 
     python3 -m pip install py7zr rarfile python-magic-bin
 
-## 💻 Recommended Editor
+### 💻 Recommended Editor
 
 👉 **VS Code (Visual Studio Code):**  
 Download and install from: https://code.visualstudio.com/  
 
 In VS Code, open your script and use the integrated terminal to execute it.
 
-## ▶️ How to Run the Script
+### ▶️ How to Run the Script
 
 1. Save this script as `unzipfull.py`  
 2. Open terminal or command prompt in the script's folder  
@@ -83,7 +82,7 @@ In VS Code, open your script and use the integrated terminal to execute it.
 4. The interface will open. Select files and destination folder  
 5. Monitor extraction progress in the progress bar and message area  
 
-## 🚨 Important Notes
+### 🚨 Important Notes
 
 - `rarfile` requires the `unrar` program installed on the system (Linux/macOS)  
 - On Linux systems, `tkinter` may need separate installation:
@@ -92,29 +91,21 @@ In VS Code, open your script and use the integrated terminal to execute it.
 - Avoid modifying files while extraction is in progress  
 - Upon completion, the window will display a countdown before closing  
 
-## 📞 Need Help?  
+### 📞 Need Help?  
 If you have questions, review each library's documentation:
 - https://pypi.org/project/py7zr/  
 - https://pypi.org/project/rarfile/  
 - https://docs.python.org/3/library/tk.html  
 
 ---
-👨‍💻 **Created by:** Mike CalielFR Barbosa  
-https://github.com/Calielbr  
 
-"""
-═══════════════════════════════════════════════════════════════════════════════
-📦 SCRIPT: Extração de Arquivos (.zip, .7z, .rar, .zip.001...) com Interface Gráfica (Tkinter)
+## 🇧🇷 Versão em Português
 
-Este script oferece uma interface gráfica (GUI) para selecionar arquivos compactados
-(.zip, .rar, .7z, e arquivos divididos como .zip.001, .zip.002, etc.) e extrair todos
-automaticamente para uma pasta de destino definida pelo usuário.
+Este script oferece uma interface gráfica (GUI) para selecionar arquivos compactados (.zip, .rar, .7z, e arquivos divididos como .zip.001, .zip.002, etc.) e extrair todos automaticamente para uma pasta de destino definida pelo usuário.
 
-Ele exibe o progresso da extração em uma barra visual, incluindo o tamanho dos arquivos
-em GB e o número total de arquivos sendo processados.
+Ele exibe o progresso da extração em uma barra visual, incluindo o tamanho dos arquivos em GB e o número total de arquivos sendo processados.
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-🔧 FUNCIONALIDADES:
+### 🔧 Funcionalidades
 
 ✔️ Interface gráfica (GUI) com Tkinter  
 ✔️ Suporte aos formatos .zip, .rar, .7z e .zip.001/.zip.002/...  
@@ -124,39 +115,36 @@ em GB e o número total de arquivos sendo processados.
 ✔️ Evita fechar caso nenhum arquivo tenha sido selecionado  
 ✔️ Suporte completo para Windows, Linux e macOS  
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📁 REQUISITOS:
+### 📁 Requisitos
 
 ✔️ Python 3.7 ou superior  
 ✔️ Bibliotecas usadas (instale com pip):  
     - tkinter (interface gráfica) → geralmente já vem no Python  
     - zipfile (padrão do Python)  
     - rarfile → extração de .rar  
-    - py7zr   → extração de .7z  
+    - py7zr → extração de .7z  
     - python-magic-bin (opcional) → melhor detecção de tipos de arquivos  
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-💻 INSTALAÇÃO DO PYTHON:
+### 💻 Instalação do Python
 
-🔹 WINDOWS:  
+🔹 **WINDOWS:**  
     1. Baixe o instalador: https://www.python.org/downloads/windows/  
     2. Marque a opção "Add Python to PATH" na instalação  
     3. Conclua a instalação normalmente  
 
-🔹 LINUX (Ubuntu, Mint, etc):  
+🔹 **LINUX (Ubuntu, Mint, etc):**  
     Verifique se o Python já está instalado com:  
-        python3 --version  
+        `python3 --version`  
     Caso não esteja ou deseje atualizar:  
-        sudo apt update  
-        sudo apt install python3 python3-pip python3-tk unrar  
+        `sudo apt update`  
+        `sudo apt install python3 python3-pip python3-tk unrar`  
 
-🔹 MACOS:  
+🔹 **MACOS:**  
     Python já vem instalado, mas você pode atualizar usando Homebrew:  
-        brew install python  
-        brew install unrar  
+        `brew install python`  
+        `brew install unrar`  
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📦 INSTALAÇÃO DAS DEPENDÊNCIAS:
+### 📦 Instalação das Dependências
 
 Abra o terminal ou prompt de comando e execute:
 
@@ -166,16 +154,14 @@ Caso use múltiplas versões do Python, use:
 
     python3 -m pip install py7zr rarfile python-magic-bin
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-💻 EDITOR RECOMENDADO:
+### 💻 Editor Recomendado
 
-👉 VS Code (Visual Studio Code):  
+👉 **VS Code (Visual Studio Code):**  
 Baixe e instale em: https://code.visualstudio.com/  
 
 No VS Code, abra seu script e use o terminal integrado para executar.
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-▶️ COMO EXECUTAR O SCRIPT:
+### ▶️ Como Executar o Script
 
 1. Salve este script como `unzipfull.py`  
 2. Abra o terminal ou prompt de comando na pasta onde está o arquivo  
@@ -188,27 +174,22 @@ No VS Code, abra seu script e use o terminal integrado para executar.
 4. A interface será aberta. Selecione os arquivos e a pasta de destino  
 5. Acompanhe a extração na barra de progresso e na área de mensagens  
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-🚨 NOTAS IMPORTANTES:
+### 🚨 Notas Importantes
 
 - O `rarfile` precisa do programa `unrar` instalado no sistema (Linux/macOS)  
 - Em sistemas Linux, o `tkinter` pode precisar ser instalado separadamente com:
-      sudo apt install python3-tk
+      `sudo apt install python3-tk`
 
 - Evite mexer nos arquivos enquanto estão sendo extraídos  
 - Ao final, a janela exibirá uma contagem regressiva antes de fechar  
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📞 DÚVIDAS?  
+### 📞 Dúvidas?  
 Se tiver dúvidas, revise a documentação de cada biblioteca:
 - https://pypi.org/project/py7zr/  
 - https://pypi.org/project/rarfile/  
 - https://docs.python.org/3/library/tk.html  
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-👨‍💻 CRIADO POR:
-Mike CalielFR Barbosa  
-https://github.com/Calielbr  
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+---
 
-"""
+👨‍💻 **Created by / Criado por:** Mike CalielFR Barbosa  
+https://github.com/Calielbr  
