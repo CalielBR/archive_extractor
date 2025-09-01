@@ -102,53 +102,113 @@ If you have questions, review each library's documentation:
 👨‍💻 **Created by:** Mike CalielFR Barbosa  
 https://github.com/Calielbr  
 
+"""
+═══════════════════════════════════════════════════════════════════════════════
+📦 SCRIPT: Extração de Arquivos (.zip, .7z, .rar, .zip.001...) com Interface Gráfica (Tkinter)
 
-
-Este script oferece uma interface gráfica (GUI) para selecionar arquivos compactados  
-(.zip, .rar, .7z, e arquivos divididos como .zip.001, .zip.002, etc.) e extrair todos  
+Este script oferece uma interface gráfica (GUI) para selecionar arquivos compactados
+(.zip, .rar, .7z, e arquivos divididos como .zip.001, .zip.002, etc.) e extrair todos
 automaticamente para uma pasta de destino definida pelo usuário.
 
-Ele exibe o progresso da extração em uma barra visual, incluindo o tamanho dos arquivos  
+Ele exibe o progresso da extração em uma barra visual, incluindo o tamanho dos arquivos
 em GB e o número total de arquivos sendo processados.
 
----
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔧 FUNCIONALIDADES:
 
-## 🔧 FUNCIONALIDADES
+✔️ Interface gráfica (GUI) com Tkinter  
+✔️ Suporte aos formatos .zip, .rar, .7z e .zip.001/.zip.002/...  
+✔️ Junta automaticamente partes divididas (.zip.001, .zip.002, ...)  
+✔️ Exibe barra de progresso com GB extraído e total  
+✔️ Janela com contagem regressiva para fechamento automático após concluir  
+✔️ Evita fechar caso nenhum arquivo tenha sido selecionado  
+✔️ Suporte completo para Windows, Linux e macOS  
 
-- ✔️ Interface gráfica (GUI) com Tkinter  
-- ✔️ Suporte aos formatos `.zip`, `.rar`, `.7z` e `.zip.001/.zip.002/...`  
-- ✔️ Junta automaticamente partes divididas (`.zip.001`, `.zip.002`, ...)  
-- ✔️ Exibe barra de progresso com GB extraído e total  
-- ✔️ Janela com contagem regressiva para fechamento automático após concluir  
-- ✔️ Evita fechar caso nenhum arquivo tenha sido selecionado  
-- ✔️ Suporte completo para **Windows**, **Linux** e **macOS**  
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📁 REQUISITOS:
 
----
+✔️ Python 3.7 ou superior  
+✔️ Bibliotecas usadas (instale com pip):  
+    - tkinter (interface gráfica) → geralmente já vem no Python  
+    - zipfile (padrão do Python)  
+    - rarfile → extração de .rar  
+    - py7zr   → extração de .7z  
+    - python-magic-bin (opcional) → melhor detecção de tipos de arquivos  
 
-## 📁 REQUISITOS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+💻 INSTALAÇÃO DO PYTHON:
 
-- ✔️ Python 3.7 ou superior  
-- ✔️ Bibliotecas utilizadas (instale com `pip`):  
-  - `tkinter` → interface gráfica (já vem com Python)  
-  - `zipfile` → módulo padrão do Python  
-  - `rarfile` → para extração de arquivos `.rar`  
-  - `py7zr` → para extração de arquivos `.7z`  
-  - `python-magic-bin` (opcional) → detecção mais precisa de tipos de arquivos  
+🔹 WINDOWS:  
+    1. Baixe o instalador: https://www.python.org/downloads/windows/  
+    2. Marque a opção "Add Python to PATH" na instalação  
+    3. Conclua a instalação normalmente  
 
----
+🔹 LINUX (Ubuntu, Mint, etc):  
+    Verifique se o Python já está instalado com:  
+        python3 --version  
+    Caso não esteja ou deseje atualizar:  
+        sudo apt update  
+        sudo apt install python3 python3-pip python3-tk unrar  
 
-## 💻 INSTALAÇÃO DO PYTHON
+🔹 MACOS:  
+    Python já vem instalado, mas você pode atualizar usando Homebrew:  
+        brew install python  
+        brew install unrar  
 
-### 🪟 Windows:
-1. Baixe o instalador: https://www.python.org/downloads/windows/  
-2. Marque a opção **"Add Python to PATH"** na instalação  
-3. Conclua a instalação normalmente  
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📦 INSTALAÇÃO DAS DEPENDÊNCIAS:
 
-### 🐧 Linux (Ubuntu, Mint, etc):
-Verifique se o Python já está instalado:
-```bash
-python3 --version
+Abra o terminal ou prompt de comando e execute:
 
+    pip install py7zr rarfile python-magic-bin
 
+Caso use múltiplas versões do Python, use:
 
+    python3 -m pip install py7zr rarfile python-magic-bin
 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+💻 EDITOR RECOMENDADO:
+
+👉 VS Code (Visual Studio Code):  
+Baixe e instale em: https://code.visualstudio.com/  
+
+No VS Code, abra seu script e use o terminal integrado para executar.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+▶️ COMO EXECUTAR O SCRIPT:
+
+1. Salve este script como `unzipfull.py`  
+2. Abra o terminal ou prompt de comando na pasta onde está o arquivo  
+3. Execute o script com:
+
+       python unzipfull.py
+    ou
+       python3 unzipfull.py
+
+4. A interface será aberta. Selecione os arquivos e a pasta de destino  
+5. Acompanhe a extração na barra de progresso e na área de mensagens  
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚨 NOTAS IMPORTANTES:
+
+- O `rarfile` precisa do programa `unrar` instalado no sistema (Linux/macOS)  
+- Em sistemas Linux, o `tkinter` pode precisar ser instalado separadamente com:
+      sudo apt install python3-tk
+
+- Evite mexer nos arquivos enquanto estão sendo extraídos  
+- Ao final, a janela exibirá uma contagem regressiva antes de fechar  
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📞 DÚVIDAS?  
+Se tiver dúvidas, revise a documentação de cada biblioteca:
+- https://pypi.org/project/py7zr/  
+- https://pypi.org/project/rarfile/  
+- https://docs.python.org/3/library/tk.html  
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+👨‍💻 CRIADO POR:
+Mike CalielFR Barbosa  
+https://github.com/Calielbr  
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+"""
